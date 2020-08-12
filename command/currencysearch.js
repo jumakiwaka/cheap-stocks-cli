@@ -30,6 +30,7 @@ async function searchCurrency(){
 	} else{
 		console.log(chalk.yellow(`Oops! ${isoCode} is not yet supported in cheap stocks Inc.`));
 	}
+  return isAvailableCurrency;
 	}catch (error) {
 		util.handleError(error);
 	}
