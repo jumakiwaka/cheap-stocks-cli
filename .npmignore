@@ -1,0 +1,6 @@
+.travis.yml
+.vscode
+.editorconfig
+coverage.lcov
+test
+scripts
