@@ -15,4 +15,4 @@ A sample node cli app
 
 ### using npm
 
-- run `npm install -g cs`
+- run `npm install -g cheap-stocks-cli`
