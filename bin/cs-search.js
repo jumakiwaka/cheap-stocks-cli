@@ -1,21 +1,16 @@
-const program = require("commander");
-const pkg = require("../package.json");
-const {searchCurrency} = require("../command/currencysearch");
+const program = require('commander');
+const pkg = require('../package.json');
+const { searchCurrency } = require('../command/currencysearch');
+
+program.version(pkg.version);
 
 program
-	.version(pkg.version)
+  .command('currency [ISO_4217_code]')
+  .description('search currency support')
+  .action(() => searchCurrency());
 
+program.parse(process.argv);
 
-program
-	.command("currency [ISO 4217 code]")
-	.description("search currency support")
-	.action(() => searchCurrency())
-	
-
-program.parse(process.argv)
-
-if(!process.argv.slice(2).length){
-	program.outputHelp();
+if (!process.argv.slice(2).length) {
+  program.outputHelp();
 }
-
-

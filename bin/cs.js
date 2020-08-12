@@ -1,12 +1,12 @@
 #! /usr/bin/env node
 
-const program = require("commander");
-const pkg = require("../package.json");
-const updateNotifier = require("update-notifier");
+const program = require('commander');
+const updateNotifier = require('update-notifier');
+const pkg = require('../package.json');
 
-updateNotifier({pkg}).notify({isGlobal:true});
+updateNotifier({ pkg }).notify({ isGlobal: true });
 
-program.
-	version(pkg.version)
-	.command("search", "look if a currency is available")
-	.parse(process.arg)
+program
+  .version(pkg.version)
+  .command('search', 'look up if an asset is available for support')
+  .parse(process.arg);
