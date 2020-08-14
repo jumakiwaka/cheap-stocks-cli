@@ -9,4 +9,4 @@ updateNotifier({ pkg }).notify({ isGlobal: true });
 program
   .version(pkg.version)
   .command('search', 'look up if an asset is available for support')
-  .parse(process.arg);
+  .parse(process.argv);
