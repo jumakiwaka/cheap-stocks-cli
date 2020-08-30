@@ -1,0 +1,10 @@
+language: node_js
+node_js: 12.8.3
+
+deploy:
+  - provider: npm
+    api_key: $NPM_TOKEN
+    on:
+      tags: true
+      repo: jumakiwaka/cheap-stocks-cli
+    email: $NPM_EMAIL
