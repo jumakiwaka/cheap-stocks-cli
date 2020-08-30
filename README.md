@@ -16,3 +16,4 @@ A sample node cli app
 ### using npm
 
 - run `npm install -g cheap-stocks-cli`
+- type `cs` from anywhere in your terminal to get started with the cli app
