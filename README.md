@@ -2,7 +2,7 @@
 
 
 
-A sample node cli app
+A sample node cli app for focus mobile interview challenge(2020)
 
 ## Quick start
 
